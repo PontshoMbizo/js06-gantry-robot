@@ -1,0 +1,222 @@
+{
+ "name": "js06-bed",
+ "note": "SAMPLE layout: 4 crops at 150 mm spacing, seedling canopy radius 30 mm (MECH-05 note). Measure the real bed and replace. Coordinates in mm from the homing datum (X-min, Y-min switch trip points).",
+ "size_mm": [
+  620,
+  1060
+ ],
+ "crop_rows_mm": [
+  105,
+  255,
+  405,
+  555,
+  705,
+  855,
+  1005
+ ],
+ "kinds": {
+  "bokchoy": {
+   "glyph": "b",
+   "role": "p",
+   "radius_mm": 30,
+   "short": "bokc"
+  },
+  "lettuce": {
+   "glyph": "&",
+   "role": "p",
+   "radius_mm": 30,
+   "short": "lett"
+  },
+  "radish": {
+   "glyph": "*",
+   "role": "u",
+   "radius_mm": 30,
+   "short": "radi"
+  },
+  "basil": {
+   "glyph": "%",
+   "role": "p",
+   "radius_mm": 30,
+   "short": "basi"
+  }
+ },
+ "crops": [
+  {
+   "kind": "bokchoy",
+   "x": 85,
+   "y": 105
+  },
+  {
+   "kind": "bokchoy",
+   "x": 85,
+   "y": 255
+  },
+  {
+   "kind": "bokchoy",
+   "x": 85,
+   "y": 405
+  },
+  {
+   "kind": "bokchoy",
+   "x": 85,
+   "y": 555
+  },
+  {
+   "kind": "bokchoy",
+   "x": 85,
+   "y": 705
+  },
+  {
+   "kind": "bokchoy",
+   "x": 85,
+   "y": 855
+  },
+  {
+   "kind": "bokchoy",
+   "x": 85,
+   "y": 1005
+  },
+  {
+   "kind": "lettuce",
+   "x": 235,
+   "y": 105
+  },
+  {
+   "kind": "lettuce",
+   "x": 235,
+   "y": 255
+  },
+  {
+   "kind": "lettuce",
+   "x": 235,
+   "y": 405
+  },
+  {
+   "kind": "lettuce",
+   "x": 235,
+   "y": 555
+  },
+  {
+   "kind": "lettuce",
+   "x": 235,
+   "y": 705
+  },
+  {
+   "kind": "lettuce",
+   "x": 235,
+   "y": 855
+  },
+  {
+   "kind": "lettuce",
+   "x": 235,
+   "y": 1005
+  },
+  {
+   "kind": "radish",
+   "x": 385,
+   "y": 105
+  },
+  {
+   "kind": "radish",
+   "x": 385,
+   "y": 255
+  },
+  {
+   "kind": "radish",
+   "x": 385,
+   "y": 405
+  },
+  {
+   "kind": "radish",
+   "x": 385,
+   "y": 555
+  },
+  {
+   "kind": "radish",
+   "x": 385,
+   "y": 705
+  },
+  {
+   "kind": "radish",
+   "x": 385,
+   "y": 855
+  },
+  {
+   "kind": "radish",
+   "x": 385,
+   "y": 1005
+  },
+  {
+   "kind": "basil",
+   "x": 535,
+   "y": 105
+  },
+  {
+   "kind": "basil",
+   "x": 535,
+   "y": 255
+  },
+  {
+   "kind": "basil",
+   "x": 535,
+   "y": 405
+  },
+  {
+   "kind": "basil",
+   "x": 535,
+   "y": 555
+  },
+  {
+   "kind": "basil",
+   "x": 535,
+   "y": 705
+  },
+  {
+   "kind": "basil",
+   "x": 535,
+   "y": 855
+  },
+  {
+   "kind": "basil",
+   "x": 535,
+   "y": 1005
+  }
+ ],
+ "sim_weeds": [
+  {
+   "x": 160,
+   "y": 180,
+   "conf": 0.91
+  },
+  {
+   "x": 110,
+   "y": 300,
+   "conf": 0.84
+  },
+  {
+   "x": 310,
+   "y": 480,
+   "conf": 0.79
+  },
+  {
+   "x": 460,
+   "y": 630,
+   "conf": 0.73
+  },
+  {
+   "x": 390,
+   "y": 822,
+   "conf": 0.88
+  },
+  {
+   "x": 310,
+   "y": 930,
+   "conf": 0.66
+  },
+  {
+   "x": 160,
+   "y": 780,
+   "conf": 0.41
+  }
+ ]
+}

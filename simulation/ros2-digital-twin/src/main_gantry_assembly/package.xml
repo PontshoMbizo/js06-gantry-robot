@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+
+  <name>main_gantry_assembly</name>
+  <version>0.0.1</version>
+
+  <description>Gantry assembly URDF and Gazebo simulation</description>
+
+  <maintainer email="pontsho@example.com">Pontsho</maintainer>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>velocity_controllers</exec_depend>
+  <exec_depend>gz_ros2_control</exec_depend>
+  <exec_depend>gantry_control</exec_depend>
+
+</package>

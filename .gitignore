@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+logs/
+gantry.json
+vendor/
+*.zip
+gantry-cli/firmware/sim/fwsim
+build/
+install/
+log/

@@ -1,0 +1,17 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Gazebo ros2_control update rate
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+velocity_controller:
+  ros__parameters:
+    # Fixed order, matching control_node.py and /velocity_controller/commands.
+    joints:
+      - dof_linear_bearing_2   # X
+      - dof_linear_bearing     # Y carries the X bridge and Z chain
+      - joint_z                # Z

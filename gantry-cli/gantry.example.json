@@ -1,0 +1,30 @@
+{
+  "port": "/dev/serial0",
+  "bed_file": "beds/js06-bed.json",
+  "switches_connected": true,
+  "switch_nc": true,
+  "switch_backend": "auto",
+  "switch_pins": {
+    "x_min": 17,
+    "x_max": 27,
+    "y_min": 22,
+    "y_max": 23,
+    "z_top": 24
+  },
+  "rail_v": 12.0,
+  "gain_y": [
+    0.3,
+    0.05,
+    7.0,
+    0.0
+  ],
+  "spray_z": 120,
+  "spray_ms": 250,
+  "guard": 45,
+  "span_x_mm": 0,
+  "span_y_mm": 0,
+  "hotspot": "gantry-net",
+  "net_online_cmd": [],
+  "net_ap_cmd": [],
+  "net_restart_cmd": []
+}

@@ -1,0 +1,53 @@
+# Motor-ID software-in-the-loop model. Units:
+# position/error mm; speed feedback mm/s; voltage command V; ROS joint
+# velocity command m/s. The first-order motor coefficients use a 5 ms ZOH.
+gantry_control_node:
+  ros__parameters:
+    Ts: 0.005
+
+    control.x.kp: 0.35
+    control.x.kd: 0.053
+    control.x.voltage_limit: 6.0
+    control.y.kp: 0.637
+    control.y.kd: 0.051
+    control.y.voltage_limit: 8.0
+    control.z.kp: 1.7
+    control.z.kd: 0.391
+    control.z.voltage_limit: 5.0
+
+    # omega(s)/V = 1.916 / (0.0758 s + 1) rad/s/V from unloaded ID.
+    # Convert through 5.09 mm/rad (X/Y belt) and 1.273 mm/rad (Z screw).
+    # Discrete denominator is 1 - exp(-Ts/tau) z^-1.
+    motor.x.b: [0.0006223869]
+    motor.x.a: [1.0, -0.936165445]
+    motor.x.deadband: 0.17
+    motor.x.velocity_min: -0.0568425
+    motor.x.velocity_max: 0.0568425
+    motor.y.b: [0.0006223869]
+    motor.y.a: [1.0, -0.936165445]
+    motor.y.deadband: 0.17
+    motor.y.velocity_min: -0.0763425
+    motor.y.velocity_max: 0.0763425
+    motor.z.b: [0.0001557563]
+    motor.z.a: [1.0, -0.936165445]
+    motor.z.deadband: 0.17
+    motor.z.velocity_min: -0.0117852
+    motor.z.velocity_max: 0.0117852
+
+    # ROS joint position is m; sensor output scales it to controller mm.
+    # Quantisation approximates the measured optical-slot resolution.
+    sensor.x.b: [1000.0]
+    sensor.x.a: [1.0]
+    sensor.x.noise_std: 0.0
+    sensor.x.quantization: 1.066
+    sensor.x.delay_samples: 0
+    sensor.y.b: [1000.0]
+    sensor.y.a: [1.0]
+    sensor.y.noise_std: 0.0
+    sensor.y.quantization: 1.066
+    sensor.y.delay_samples: 0
+    sensor.z.b: [1000.0]
+    sensor.z.a: [1.0]
+    sensor.z.noise_std: 0.0
+    sensor.z.quantization: 0.267
+    sensor.z.delay_samples: 0
