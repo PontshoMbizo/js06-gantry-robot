@@ -5,7 +5,7 @@ and sprays water at each weed. Built for a final-year Electrical and Computer En
 (EEE4022S) at the University of Cape Town. This repository holds the operator software, the ESP32-C3 motion
 firmware and the simulations. Hardware: Raspberry Pi Zero W, ESP32-C3, 5 MP camera, a bed of 840 x 480 mm, parts budget R2000.
 
-![The built gantry over the test bed](docs/images/hw_gantry_labelled.png)
+<p align="center"><img src="docs/images/hw_gantry_labelled.png" width="480" alt="The built gantry over the test bed"></p>
 
 ## How it works
 
@@ -33,9 +33,9 @@ flowchart LR
 | Spray-grid metric for detection | The nozzle fires over a cell and does not count plants, so instance IoU answers the wrong question |
 | Controller gains derived from identified plants | Each axis was identified from step tests, then checked in simulation over its uncertainty range before it ran on the hardware |
 
-<p>
-<img src="docs/images/gantry_cad_render.png" width="49%" alt="CAD model of the gantry">
-<img src="docs/images/valve_nozzle.jpeg" width="49%" alt="Spray nozzle, valve and tubing on the Z carriage">
+<p align="center">
+<img src="docs/images/gantry_cad_render.png" height="320" alt="CAD model of the gantry">
+<img src="docs/images/valve_nozzle.jpeg" height="320" alt="Spray nozzle, valve and tubing on the Z carriage">
 </p>
 
 ## Findings
@@ -54,7 +54,7 @@ All figures are from the project report (27 October 2026). The detection numbers
 | On-device speed | Pi Zero W, one core: segmentation 4.3 s per image, YOLOv8n at 320 px 24.1 s |
 | Detection metric | Spray-grid F1 0.908 for segmentation against 0.654 for YOLOv8n. Matched box by box, the order reverses |
 
-![Measured move against the predicted range](docs/images/res_ctrl_trace.png)
+<p align="center"><img src="docs/images/res_ctrl_trace.png" width="520" alt="Measured move against the predicted range"></p>
 
 *A traced X and Y move: measured (solid) against the prediction for the identified plant (dashed) and its slow and fast corners (thin).*
 
