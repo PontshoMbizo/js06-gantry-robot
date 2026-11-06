@@ -58,12 +58,9 @@ All figures are from the project report (27 October 2026). The detection numbers
 
 *A traced X and Y move: measured (solid) against the prediction for the identified plant (dashed) and its slow and fast corners (thin).*
 
-<p>
-<img src="docs/images/stitch_4.jpg" height="320" alt="Four camera frames stitched into one image of the bed">
-<img src="docs/images/test_bed_plants.jpeg" height="320" alt="Test bed with young plants">
-</p>
+<p align="center"><img src="docs/images/stitch_4.jpg" height="360" alt="Four camera frames stitched into one image of the bed"></p>
 
-*Left: four frames at bridge positions 5, 260, 515 and 770 mm cover 97.8% of the visible bed, with seams under 0.2 mm.*
+*Four camera frames taken at bridge positions 5, 260, 515 and 770 mm cover 97.8% of the visible bed, with seams under 0.2 mm.*
 
 ### Limits of these results
 
